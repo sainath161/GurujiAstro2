@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const flowRoutes = require('./routes/flowRoutes');
 const app = express();
 const PORT = 3000;
-const url = 'mongodb+srv://sagarparise01:59UK0NQEr1j3LaPa@cluster0.hsox2e2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const url = process.env.MONGO_URI;
 
 
 app.use(bodyParser.json());
